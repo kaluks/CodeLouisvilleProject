@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Equipment Closet</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body ng-app="equipmentApp">
+  <header id="top-header" class="main-header">
+      <span class="title">Equipment Finder</span>
+      <h1>click below your name to update items available to share!</h1>
+  </header>
+
+  <div ng-controller="mainCtrl" class="list"  >
+
+    <div  ng-repeat=" therapist in therapists"  class="eachPoster">
+
+      <label class="staff" ng-mouseover="contactInfo()" type="text">{{therapist.name}}</label>
+
+      <label class="editing-label" >{{therapist.equipment}}</label>
+      <input ng-blur="editing = false;"  class="editing-label" ng-model="therapist.equipment" ng-change="equipmentChange()" type="text"/>
+      <button href="" class="save button" >SAVE</button>
+
+    </div>
+
+  </div>
+
+
+  <script src="../node_modules/angular/angular.js"></script>
+  <script src="./scripts/app.js"> </script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script> -->
+
+
+</body>
+</html>

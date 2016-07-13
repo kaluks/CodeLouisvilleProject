@@ -1,0 +1,70 @@
+h1 {
+  font-size: 1.3em;
+  color: #fff;
+  font-weight: normal;
+  line-height: 0.8;
+  text-align:center;
+}
+
+h2 {
+  font-size: 3.3125em;
+  font-weight: normal;
+  line-height: 1.1;
+  margin-bottom:.5em;
+  text-align: center;
+}
+
+
+body {
+  color: #5bd64f;
+  margin: 10;
+  font: 1em/1.5 "Helvetica", Arial, sans-serif;
+}
+input {
+  width:100%;
+  font-size:1em;
+}
+
+.main-header {
+  color: #fff;
+  background-color: #6C969D;
+  padding: 3em;
+  text-align: center;
+}
+.editing-label {
+  color:#444;
+}
+
+.title {
+  color: white;
+  font-size: 2em;
+  text-align: center;
+}
+
+.list {
+  margin:10px;
+}
+.eachPoster {
+  padding:20px;
+}
+
+.button {
+   border-top: 1px solid #96d1f8;
+   background: #65a9d7;
+   background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
+   padding: 4px 8px;
+   border-radius: 4px;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 10px;
+   font-family: Georgia, serif;
+   text-decoration: none;
+   vertical-align: middle;
+
+   }
+
+.button:active {
+   border-top-color: #c9edf0;
+   background: #c9edf0;
+   }
