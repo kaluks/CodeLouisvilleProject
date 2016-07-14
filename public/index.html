@@ -18,9 +18,9 @@
 
       <label class="staff" ng-mouseover="contactInfo()" type="text">{{therapist.name}}</label>
 
-      <label class="editing-label" >{{therapist.equipment}}</label>
+      <!-- <label class="editing-label" >{{therapist.equipment}}</label> -->
       <input ng-blur="editing = false;"  class="editing-label" ng-model="therapist.equipment" ng-change="equipmentChange()" type="text"/>
-      <button href="" class="save button" >SAVE</button>
+      <button class="save button">SAVE</button>
 
     </div>
 
@@ -29,6 +29,12 @@
 
   <script src="../node_modules/angular/angular.js"></script>
   <script src="./scripts/app.js"> </script>
+  <script src="./scripts/controllers/main.js"> </script>
+  <script src="./scripts/controllers/therapist.js"> </script>
+  <script src="./scripts/services/data.js"> </script>
+
+
+
   <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script> -->
 
 

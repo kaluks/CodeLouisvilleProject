@@ -16,7 +16,7 @@ h2 {
 
 
 body {
-  color: #5bd64f;
+  color: #5c96cf;
   margin: 10;
   font: 1em/1.5 "Helvetica", Arial, sans-serif;
 }
@@ -33,6 +33,7 @@ input {
 }
 .editing-label {
   color:#444;
+  padding-left:15px;
 }
 
 .title {
