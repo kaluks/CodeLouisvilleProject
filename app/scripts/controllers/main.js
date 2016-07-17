@@ -1,6 +1,24 @@
 'use strict';
 
-angular.module('equipmentApp')
+var angular = require('angular');
+
+function mainCtrl ($scope, dataService) {
+
+  dataService.getTherapists(function(response){
+    var therapists = response.data.therapists;
+    $scope.therapists =  therapists;
+  })
+
+  $scope.addTherapist = function() {
+    $scope.therapists.unshift({name: "New staff"});
+  };
+
+}
+
+module.exports = mainCtrl;
+
+
+/*angular.module('equipmentApp')
 .controller('mainCtrl',function($scope, dataService){
 
   dataService.getTherapists(function(response){
@@ -37,16 +55,17 @@ angular.module('equipmentApp')
     {name: "Carla",
      equipment: "Tab"}
     ]
-*/
+
 
   $scope.equipmentChange = function(newEquipment){
     console.log("updated the new equipment!");
 
   }
+  */
 
   //$scope.equipmentAdd = function(){
   //  $scope.equipments.push(equipment);
 //  }
 
 
-});
+//});

@@ -5,14 +5,17 @@ var router = require('./api');
 
 var app = express();
 
+require('./database');
+require('./seed');
 
 app.use('/', express.static(__dirname + '/public'));
 app.use(parser.json());
 
 
 //app.get('/',function(req, res){
- //res.send('');
+// res.send('');
 //});
+
 
 
 app.use('/api', router);

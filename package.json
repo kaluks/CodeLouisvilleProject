@@ -10,7 +10,11 @@
   "license": "ISC",
   "dependencies": {
     "angular": "^1.5.7",
+    "body-parser": "1.14.2",
     "express": "^4.14.0",
-    "body-parser": "1.14.2"
+    "mongoose": "4.5.4"
+  },
+  "devDependencies": {
+    "webpack": "1.13.1"
   }
 }
